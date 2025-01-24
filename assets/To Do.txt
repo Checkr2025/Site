@@ -1,0 +1,16 @@
+To Do
+- Google Maps JavaScript API (Contact Us Page)
+- Google Form - Contact Us Form (Contact Us Page)
+- Our team pictures (About Us Page)
+- The Checkr Assistant
+
+
+
+Security alerts
+- Access to developer tools is still possible using some work-arounds.
+- Consider storage of credentials in external database.
+- Consider use of tokens.
+- Consider IP address limitations to the results page.
+- More verification / authorization requirements.
+- Admin page for end page addition of users and students.
+- Functionality for students to register / sign up.
