@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Check your results instantly! Fast, accurate, and easy access to exam results right at your fingertips.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/Logo.png"> 
+    <title> Contact Us - Checkr </title>
+</head>
+<body>
+    <header>
+        <h1>Checkr &nbsp <img src="images/Logo.png" width="20" height="20"> </h1> 
+        <div class="menu-icon" onclick="toggleNav()">&#9776;</div>
+    </header>
+    <div id="sideNav" class="side-nav">
+        <span class="close-btn" onclick="toggleNav()">&times;</span>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact us.html">Contact Us</a>
+        <a href="admin.html">Admin Dashboard</a>
+        <a href="privacy policy.html">Privacy Policy</a>
+        <a href="terms of service.html">Terms of Service</a>
+    </div>
+
+    <div class="container">
+        <div class="contact-form">
+            <div class="form-container">
+            <iframe 
+            id="google-form"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfLc-uZzxrf3d8kE57NftPkjE8U9a4ETYw3Ua-gkBpkI19Kbw/viewform?embedded=true"
+            frameborder="0"
+            allowfullscreen>Loading…</iframe>
+            <br>
+            <br>
+            </div>
+        </div>
+        <div class="contact-info">
+            <h2>Additional Contact Information</h2>
+            <p><strong>Email:</strong> checkr2025@gmail.com </p>
+            <p><strong>Phone:</strong> +256 781 451 320</p>
+            <p><strong>Address:</strong> Ndejje Senior Secondary School, Bombo - Luweero, Uganda.</p>
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1555.8368617441445!2d32.475543!3d0.6106979!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177c50e5e6f6c00d%3A0x6fe69f230fe503e3!2sNdejje%20Senior%20Secondary%20School!5e1!3m2!1sen!2sug!4v1737753417270!5m2!1sen!2sug" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Checkr. All rights reserved.</p>
+        <p><a href="privacy policy.html" style="color: white;">Privacy Policy</a> | <a href="terms of service.html" style="color: white;">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            document.getElementById("sideNav").classList.toggle("open");
+        }
+    </script>
+
+    <script src="javascript/script.js"> </script>
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Check your results instantly! Fast, accurate, and easy access to exam results right at your fingertips.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/Logo.png"> 
+    <title> Home - Checkr </title>
+</head>
+<body>
+    <header>
+        <h1>Checkr &nbsp <img src="images/Logo.png" width="20" height="20"> </h1> 
+        <div class="menu-icon" onclick="toggleNav()">&#9776;</div>
+    </header>
+    <div id="sideNav" class="side-nav">
+        <span class="close-btn" onclick="toggleNav()">&times;</span>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact us.html">Contact Us</a>
+        <a href="admin.html">Admin Dashboard</a>
+        <a href="privacy policy.html">Privacy Policy</a>
+        <a href="terms of service.html">Terms of Service</a> 
+    </div>
+
+    <section class="hero">
+        <h3>Check Your Results Instantly!</h1>
+        <p>Easy access to your exam results at your fingertips.</p>
+        <div class="container">
+            <div class="form-container">
+                <input type="text" id="rollNumber" placeholder="Enter Your Roll Number" />
+                <input type="text" id="studentName" placeholder="Enter Your Name" />
+                <button onclick="checkResult()">Check Result</button>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h3>Fast</h3>
+            <p>Get results within seconds.</p>
+            <img src="images/Picture2.jpg" width="130" height="100">
+        </div>
+        <div class="feature">
+            <h3>Accurate</h3>
+            <p>Reliable and precise data.</p>
+            <img src="images/Picture1.jpg" width="100" height="100">
+        </div>
+        <div class="feature">
+            <h3>Secure</h3>
+            <p>Your privacy is our priority.</p>
+            <img src="images/Picture3.jpg" width="100" height="100">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Checkr. All rights reserved.</p>
+        <p><a href="privacy policy.html" style="color: white;">Privacy Policy</a> | <a href="terms of service.html" style="color: white;">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="_H6yLlvVCxaSTd0uOH-_9";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+        </script>
+
+    <script>
+        function toggleNav() {
+            document.getElementById("sideNav").classList.toggle("open");
+        }
+    </script>
+
+<script src="javascript/home.js"></script>
+<script src="javascript/script.js"></script>   
+
+</body>
+</html>

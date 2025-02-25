@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Check your results instantly! Fast, accurate, and easy access to exam results right at your fingertips.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/Logo.png"> 
+    <title> Results - Checkr </title>
+</head>
+<body>
+    <header>
+        <h1>Checkr &nbsp <img src="images/Logo.png" width="20" height="20"> </h1> 
+        <div class="menu-icon" onclick="toggleNav()">&#9776;</div>
+    </header>
+    <div id="sideNav" class="side-nav">
+        <span class="close-btn" onclick="toggleNav()">&times;</span>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="faqs.html">FAQs</a>
+        <a href="contact us.html">Contact Us</a>
+        <a href="admin.html">Admin Dashboard</a>
+        <a href="privacy policy.html">Privacy Policy</a>
+        <a href="terms of service.html">Terms of Service</a>
+    </div>
+    
+    <center>
+    <section class="result-container">
+        <h2>Results for: <span id="studentName"></span></h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>Roll Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="resultName"></td>
+                    <td id="resultClass"></td>
+                    <td id="resultRoll"></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>Subject Results</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                    <th>Comment</th>
+                </tr>
+            </thead>
+            <tbody id="resultsTable">
+
+                <!-- Dynamic Results Rows -->
+            </tbody>
+        </table>
+    </section>
+
+    <div class="buttons">
+        <button onclick="window.print()">Download / Print</button>
+        <button onclick="location.href='index.html'">Check Another Result</button>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Checkr. All rights reserved.</p>
+        <p><a href="privacy policy.html" style="color: white;">Privacy Policy</a> | <a href="terms of service.html" style="color: white;">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            document.getElementById("sideNav").classList.toggle("open");
+        }
+    </script>
+
+    <script src="javascript/script.js">    </script>   
+    <script src="javascript/result.js">    </script>
+
+
+</body>
+</html>

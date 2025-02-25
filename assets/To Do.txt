@@ -1,0 +1,22 @@
+To Do
+- Google Maps JavaScript iframe (Contact Us Page) 
+- Google Form - Contact Us Form (Contact Us Page) 
+- Our team pictures (About Us Page)
+- The Checkr AI Assistant
+- Consider LocalStorage a data input and processing method
+- Add a class teacher's comment and headteachers comment section to the table of results
+
+
+
+
+Security alerts
+- Access to developer tools is still possible using some work-arounds.
+- Consider storage of credentials in external database.
+- Consider use of tokens.
+- Consider IP address limitations to the results page.
+- More verification / authorization requirements.
+- Admin page for end page addition of users and students.
+- Functionality for students to register / sign up.
+- Make alerts play sound
+- Disable downloading site pages
+- External JavaScript and not in-line
