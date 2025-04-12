@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
      <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-32K555MC5R"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+     <script async src="https://www.googletagmanager.com/gtag/js?id=G-32K555MC5R"></script>
+     <script>
+       window.dataLayer = window.dataLayer || [];
+       function gtag(){dataLayer.push(arguments);}
+       gtag('js', new Date());
 
-          gtag('config', 'G-32K555MC5R');
-        </script>
+       gtag('config', 'G-32K555MC5R');
+     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Check your results instantly! Fast, accurate, and easy access to exam results right at your fingertips.">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" type="image/x-icon" href="images/Logo.png"> 
-    <title> Home - Checkr </title>
+    <title> Home | Checkr </title>
 </head>
 <body>
     <header>
@@ -38,8 +38,8 @@
         <p>Easy access to your exam results at your fingertips.</p>
         <div class="container">
             <div class="form-container">
-                <input type="text" id="rollNumber" placeholder="Enter Your Roll Number" />
-                <input type="text" id="studentName" placeholder="Enter Your Name" />
+                <input type="text" id="rollNumber" placeholder="Enter Your Roll Number" autocomplete="off" />
+                <input type="text" id="studentName" placeholder="Enter Your Name" autocomplete="off" />
                 <button onclick="checkResult()">Check Result</button>
             </div>
         </div>
@@ -67,10 +67,11 @@
         <p><a href="privacy policy.html" style="color: white;">Privacy Policy</a> | <a href="terms of service.html" style="color: white;">Terms of Service</a></p>
     </footer>
 
+    <!-- Chatbot 1 -->
     <script>
-        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="_H6yLlvVCxaSTd0uOH-_9";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-        </script>
-
+        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="jzmk0R-EsP0ZeHOMmENPB";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+        
     <script>
         function toggleNav() {
             document.getElementById("sideNav").classList.toggle("open");
