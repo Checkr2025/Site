@@ -1,6 +1,0 @@
-To Do - Improvements
-
-- Ownership
-- Better updated pictures
-- Graphics
-* Security (Autofill in forms) 

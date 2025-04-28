@@ -1,5 +1,0 @@
-Improvement Databases
-
-- Firebase
-- Xampp
-- Wampp
