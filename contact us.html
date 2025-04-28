@@ -1,75 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-     <!-- Google tag (gtag.js) -->
-     <script async src="https://www.googletagmanager.com/gtag/js?id=G-32K555MC5R"></script>
-     <script>
-       window.dataLayer = window.dataLayer || [];
-       function gtag(){dataLayer.push(arguments);}
-       gtag('js', new Date());
+    <html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-32K555MC5R"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-       gtag('config', 'G-32K555MC5R');
-     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Check your results instantly! Fast, accurate, and easy access to exam results right at your fingertips.">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/x-icon" href="images/Logo.png"> 
-    <title> Contact Us | Checkr </title>
-</head>
-<body>
-    <header>
-        <h1>Checkr &nbsp <img src="images/Logo.png" width="20" height="20"> </h1> 
-        <div class="menu-icon" onclick="toggleNav()">&#9776;</div>
-    </header>
-    <div id="sideNav" class="side-nav">
-        <span class="close-btn" onclick="toggleNav()">&times;</span>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="faqs.html">FAQs</a>
-        <a href="contact us.html">Contact Us</a>
-        <a href="admin.html">Admin Dashboard</a>
-        <a href="privacy policy.html">Privacy Policy</a>
-        <a href="terms of service.html">Terms of Service</a>
-    </div>
+        gtag('config', 'G-32K555MC5R');
+        </script>
 
-    <div class="container">
-        <div class="contact-form">
-            <div class="form-container">
-            <iframe 
-            id="google-form"
-            src="https://docs.google.com/forms/d/e/1FAIpQLSfLc-uZzxrf3d8kE57NftPkjE8U9a4ETYw3Ua-gkBpkI19Kbw/viewform?embedded=true"
-            frameborder="0"
-            allowfullscreen>Loading…</iframe>
-            <br>
-            <br>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Check your results instantly! Fast, accurate, and easy access to exam results right at your fingertips.">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" type="image/x-icon" href="images/Logo.png"> 
+        <title> Contact Us | Checkr </title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Checkr &nbsp <img src="images/Logo.png" width="20" height="20"> </h1> 
+            <div class="menu-icon" onclick="toggleNav()">&#9776;</div>
+        </header>
+
+        <div id="sideNav" class="side-nav">
+            <span class="close-btn" onclick="toggleNav()">&times;</span>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact us.html">Contact Us</a>
+            <a href="admin.html">Admin Dashboard</a>
+            <a href="privacy policy.html">Privacy Policy</a>
+            <a href="terms of service.html">Terms of Service</a>
+        </div>
+
+        <center>
+            <div class="container">
+                <div class="form-container">
+                    <form id="contactForm">
+                        <h3>Talk to Us</h3>
+                        <p> We would love to hear from you. Please let us know about any inquiries, comments and feedback. Remember that it is your feedback that keep us going. </p>
+                    
+                        <input type="text" id="fullName" placeholder="Full Name" required autocomplete="off" />
+                        <input type="email" id="email" placeholder="Email Address" autocomplete="off" />
+                        <input type="tel" id="phone" placeholder="Phone Number" autocomplete="off"/>
+                    
+                        <select id="subject" required>
+                            <option value="" disabled selected>Select Subject</option>
+                            <option value="General Inquiry">General Inquiry</option>
+                            <option value="Support Request">Support Request</option>
+                            <option value="Feedback">Feedback</option>
+                            <option value="Complaint">Complaint</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    
+                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                    
+                        <button type="submit">Send Message</button>
+                        <p id="formStatus" style="color: green;"></p>
+                    </form>
+                </div>
             </div>
-        </div>
-        <div class="contact-info">
-            <h2>Additional Contact Information</h2>
-            <p><strong>Email:</strong> checkr2025@gmail.com </p>
-            <p><strong>Phone:</strong> +256 781 451 320</p>
-            <p><strong>Address:</strong> Ndejje Senior Secondary School, Bombo - Luweero, Uganda.</p>
-            <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1555.8368617441445!2d32.475543!3d0.6106979!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177c50e5e6f6c00d%3A0x6fe69f230fe503e3!2sNdejje%20Senior%20Secondary%20School!5e1!3m2!1sen!2sug!4v1737753417270!5m2!1sen!2sug" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-        </div>
-    </div>
-    <footer class="footer">
-        <p>&copy; 2025 Checkr. All rights reserved.</p>
-        <p><a href="privacy policy.html" style="color: white;">Privacy Policy</a> | <a href="terms of service.html" style="color: white;">Terms of Service</a></p>
-    </footer>
 
-    <!-- Chatbot 4 -->
-    <script>
-        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="dkBbZf5ZW7fFVWCZdN1K3";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-    </script>
+            <br>
+            <br>
+        
+            <div class="contact-info">
+                <h2>Additional Contact Information</h2>
+                <p><strong>Email:</strong> checkr2025@gmail.com </p>
+                <p><strong>Phone:</strong> +256 781 451 320</p>
+                <p><strong>Address:</strong> Ndejje Senior Secondary School, Bombo - Luweero, Uganda.</p>
+                <p>
+                    <div class="map-container">
+                        <iframe id="map"
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1555.8368617441445!2d32.475543!3d0.6106979!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177c50e5e6f6c00d%3A0x6fe69f230fe503e3!2sNdejje%20Senior%20Secondary%20School!5e1!3m2!1sen!2sug!4v1737753417270!5m2!1sen!2sug" 
+                            width="400" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </p>
+            </div>
 
-    <script>
-        function toggleNav() {
-            document.getElementById("sideNav").classList.toggle("open");
-        }
-    </script>
+            <footer class="footer">
+                <p>&copy; 2025 Checkr. All rights reserved.</p>
+                <p><a href="privacy policy.html" style="color: white;">Privacy Policy</a> | <a href="terms of service.html" style="color: white;">Terms of Service</a></p>
+            </footer>
 
-    <script src="javascript/script.js"> </script>
+            <!-- Chatbot 4 -->
+            <script>
+                (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="dkBbZf5ZW7fFVWCZdN1K3";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+            </script>
 
-</body>
+            <script>
+                function toggleNav() {
+                    document.getElementById("sideNav").classList.toggle("open");
+                }
+            </script>
+
+            
+
+            <!-- Firebase SDK -->
+            <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+
+            <script src="javascript/firebase.js"> </script>
+
+        </center>
+
+    </body>
 </html>

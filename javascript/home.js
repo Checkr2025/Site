@@ -8,8 +8,22 @@ function checkResult() {
     
     // Students data
     const students = [
-        { roll: "030", name: "Kirabo Pal Ruth" },
-        { roll: "040", name: "Mieconi Asher King" }
+        { roll: "029", name: "Kirabo Pal Ruth" },
+        { roll: "039", name: "Mieconi Asher King" },
+        { roll: "038", name: "Mark Phillip Serunkuma" },
+        { roll: "043", name: "Mukasa Jonathan Muwanguzi" },
+        { roll: "075", name: "Sewaya Moses" },
+        { roll: "014", name: "Balaba Prince Christian" },
+        { roll: "011", name: "Atim Ejuku Jedidah" },
+        { roll: "012", name: "Atwebembeire Praise" },
+        { roll: "056", name: "Namanya Matthew Ninkusiima" },
+        { roll: "082", name: "Wanjala Jonah Samuel" },
+        { roll: "018", name: "Byarugaba Gabriel Jayden" },
+        { roll: "066", name: "Nimurungi Rachael" },
+        { roll: "019", name: "Elisha Grace Musumba" },
+        { roll: "068", name: "Nsiima Angel" },
+        { roll: "063", name: "Nansubuga Robinah Kizito" },
+        { roll: "028", name: "Kirabo Tiltons Egondi" },
     ];
 
 

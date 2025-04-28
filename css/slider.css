@@ -1,0 +1,247 @@
+.slider-container {
+  position: relative;
+  max-width: 100%;
+  margin: 30px;
+  height: 600px; /* Reduce height for larger screens */
+  overflow: hidden;
+  /* margin: 30px auto; Center the slider */
+  border-radius: 10px;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  border: 2px solid #ccc; /* Add a border to make the size visible */
+  background-color: #f9f9f9; /* Add a light background color */
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.8s ease-in-out;
+  height: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: opacity 1s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 80%;
+  text-align: center;
+  opacity: 0;
+}
+
+.overlay.animate {
+  animation: slideUpFade 1s ease forwards;
+}
+
+.overlay h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  animation: fadeInText 1.2s ease forwards;
+  animation-delay: 0.3s;
+  color: #fff; /* Set the color to white */
+}
+
+.overlay p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  animation: fadeInText 1.2s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.overlay .btn {
+  animation: fadeInText 1.2s ease forwards;
+  animation-delay: 0.9s;
+  opacity: 0;
+}
+
+.btn {
+  background: #157018;
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  border: 2px solid #ffcc00;
+  box-shadow: 0 0 8px #ffcc00;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 0;
+  transform: skewX(-20deg);
+  transition: left 0.5s;
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+.btn:hover {
+  background: #45a049;
+  transform: scale(1.05);
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s ease;
+}
+
+.nav:hover {
+  background: rgba(0,0,0,0.6);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.dots span {
+  width: 12px;
+  height: 12px;
+  background: #aaa;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dots span.active {
+  background: #fff;
+}
+
+@keyframes slideUpFade {
+  from {
+    transform: translate(-50%, 100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries for Responsive Design */
+
+/* For tablets (768px and below) */
+@media (max-width: 768px) {
+  .slider-container {
+    height: 300px; /* Smaller height for tablets */
+    margin: 15px;
+  }
+
+  .overlay {
+    padding: 20px;
+    font-size: 0.9em;
+  }
+
+  .overlay h2 {
+    font-size: 2em;
+  }
+
+  .overlay p {
+    font-size: 1em;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+
+  .nav {
+    font-size: 1.5em;
+    padding: 8px 15px;
+  }
+
+  .dots span {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/* For mobile devices (480px and below) */
+@media (max-width: 480px) {
+  .slider-container {
+    height: 250px; /* Even smaller height for mobile devices */
+    margin: 10px;
+  }
+
+  .overlay {
+    padding: 15px;
+    font-size: 0.8em;
+  }
+
+  .overlay h2 {
+    font-size: 1.5em;
+  }
+
+  .overlay p {
+    font-size: 0.9em;
+  }
+
+  .btn {
+    padding: 8px 15px;
+    font-size: 0.8em;
+  }
+
+  .nav {
+    font-size: 1.2em;
+    padding: 5px 10px;
+  }
+
+  .dots span {
+    width: 0px;
+    height: 0px;
+  }
+}

@@ -1,85 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-     <!-- Google tag (gtag.js) -->
-     <script async src="https://www.googletagmanager.com/gtag/js?id=G-32K555MC5R"></script>
-     <script>
-       window.dataLayer = window.dataLayer || [];
-       function gtag(){dataLayer.push(arguments);}
-       gtag('js', new Date());
+    <html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-32K555MC5R"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-       gtag('config', 'G-32K555MC5R');
-     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Check your results instantly! Fast, accurate, and easy access to exam results right at your fingertips.">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/x-icon" href="images/Logo.png"> 
-    <title> Home | Checkr </title>
-</head>
-<body>
-    <header>
-        <h1>Checkr &nbsp <img src="images/Logo.png" width="20" height="20"> </h1> 
-        <div class="menu-icon" onclick="toggleNav()">&#9776;</div>
-    </header>
-    <div id="sideNav" class="side-nav">
-        <span class="close-btn" onclick="toggleNav()">&times;</span>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="faqs.html">FAQs</a>
-        <a href="contact us.html">Contact Us</a>
-        <a href="admin.html">Admin Dashboard</a>
-        <a href="privacy policy.html">Privacy Policy</a>
-        <a href="terms of service.html">Terms of Service</a> 
-    </div>
+        gtag('config', 'G-32K555MC5R');
+        </script>
 
-    <section class="hero">
-        <h3>Check Your Results Instantly!</h1>
-        <p>Easy access to your exam results at your fingertips.</p>
-        <div class="container">
-            <div class="form-container">
-                <input type="text" id="rollNumber" placeholder="Enter Your Roll Number" autocomplete="off" />
-                <input type="text" id="studentName" placeholder="Enter Your Name" autocomplete="off" />
-                <button onclick="checkResult()">Check Result</button>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Check your results instantly! Fast, accurate, and easy access to exam results right at your fingertips.">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/slider.css">
+        <link rel="icon" type="image/x-icon" href="images/Logo.png"> 
+        <title> Home | Checkr </title>
+    </head>
+
+    <body>
+        <header id="top">
+            <h1>Checkr &nbsp <img src="images/Logo.png" width="20" height="20"> </h1> 
+            <div class="menu-icon" onclick="toggleNav()">&#9776;</div>
+      </header>
+
+      <div id="sideNav" class="side-nav">
+            <span class="close-btn" onclick="toggleNav()">&times;</span>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact us.html">Contact Us</a>
+            <a href="admin.html">Admin Dashboard</a>
+            <a href="privacy policy.html">Privacy Policy</a>
+            <a href="terms of service.html">Terms of Service</a> 
+        </div>
+
+        <section class="hero">
+            <h3>Check Your Results Instantly!</h1>
+            <p>Easy access to your exam results at your fingertips.</p>
+            <div class="container">
+                <div class="form-container">
+                    <input type="text" id="rollNumber" placeholder="Enter Your Roll Number" autocomplete="off" />
+                    <input type="text" id="studentName" placeholder="Enter Your Name" autocomplete="off" />
+                    <button onclick="checkResult()">Check Result</button>
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="features">
-        <div class="feature">
-            <h3>Fast</h3>
-            <p>Get results within seconds.</p>
-            <img src="images/Picture2.jpg" width="130" height="100">
-        </div>
-        <div class="feature">
-            <h3>Accurate</h3>
-            <p>Reliable and precise data.</p>
-            <img src="images/Picture1.jpg" width="100" height="100">
-        </div>
-        <div class="feature">
-            <h3>Secure</h3>
-            <p>Your privacy is our priority.</p>
-            <img src="images/Picture3.jpg" width="100" height="100">
-        </div>
-    </section>
+        </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 Checkr. All rights reserved.</p>
-        <p><a href="privacy policy.html" style="color: white;">Privacy Policy</a> | <a href="terms of service.html" style="color: white;">Terms of Service</a></p>
-    </footer>
-
-    <!-- Chatbot 1 -->
-    <script>
-        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="jzmk0R-EsP0ZeHOMmENPB";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-    </script>
+        <section class="features">
+            <div class="feature">
+                <h3>Fast</h3>
+                <p>Get results within seconds.</p>
+                <img src="images/Picture2.jpg" width="130" height="100">
+            </div>
         
-    <script>
-        function toggleNav() {
-            document.getElementById("sideNav").classList.toggle("open");
-        }
-    </script>
+            <div class="feature">
+                <h3>Accurate</h3>
+                <p>Reliable and precise data.</p>
+                <img src="images/Picture1.jpg" width="100" height="100">
+            </div>
+            
+            <div class="feature">
+                <h3>Secure</h3>
+                <p>Your privacy is our priority.</p>
+                <img src="images/Picture3.jpg" width="100" height="100">
+            </div>
+        </section>
 
-<script src="javascript/home.js"></script>
-<script src="javascript/script.js"></script>   
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide active" style="background-image: url('images/slider/pic1.jpg');">
+                    <div class="overlay">
+                        <h2> Instant Access </h2>
+                        <p> Fast and reliable access to your academic and examination results. </p>
+                        <a href="#top" class="btn">Check Now</a>
+                    </div>
+                </div>
 
-</body>
+                <div class="slide" style="background-image: url('images/slider/pic2.jpg');">
+                    <div class="overlay">
+                        <h2> Available Anywhere </h2>
+                        <p> Check your results on-the-go, anytime you need. </p>
+                        <a href="#top" class="btn">Start Now</a>
+                    </div>
+                </div>
+
+                <div class="slide" style="background-image: url('images/slider/pic4.jpg');">
+                    <div class="overlay">
+                        <h2> Talk To Us </h2>
+                        <p> We value your feedback. Feel free to share your experience with us. </p>
+                        <a href="contact us.html" class="btn">Comment</a>
+                    </div>
+                </div>
+
+                <div class="slide" style="background-image: url('images/slider/pic5.jpg');">
+                    <div class="overlay">
+                        <h2> Track Your Progress </h2>
+                        <p> Easily monitor how you have been performing and keep track. </p>
+                        <a href="#top" class="btn">Start Now</a>
+                    </div>
+                </div>
+
+                <div class="slide" style="background-image: url('images/slider/pic3.jpg');">
+                    <div class="overlay">
+                        <h2> Privacy Is Key </h2>
+                        <p> End-to-end encryption keeps your information safe. Your Privacy is Our Priority. </p>
+                        <a href="privacy policy.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+          </div>
+        
+            <button class="nav prev">&#10094;</button>
+            <button class="nav next">&#10095;</button>
+        
+            <div class="dots"></div>
+        
+        </div>
+
+        <script src="javascript/slider.js"> </script>
+
+
+        <footer class="footer">
+            <p>&copy; 2025 Checkr. All rights reserved.</p>
+            <p><a href="privacy policy.html" style="color: white;">Privacy Policy</a> | <a href="terms of service.html" style="color: white;">Terms of Service</a></p>
+        </footer>
+
+        <!-- Chatbot 1 -->
+        <script>
+            (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="jzmk0R-EsP0ZeHOMmENPB";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+        </script>
+        
+        <script>
+            function toggleNav() {
+                document.getElementById("sideNav").classList.toggle("open");
+            }
+        </script>
+
+        <script src="javascript/home.js"></script>
+
+    </body>
 </html>

@@ -1,98 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-     <!-- Google tag (gtag.js) -->
-     <script async src="https://www.googletagmanager.com/gtag/js?id=G-32K555MC5R"></script>
-     <script>
-       window.dataLayer = window.dataLayer || [];
-       function gtag(){dataLayer.push(arguments);}
-       gtag('js', new Date());
+    <html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-32K555MC5R"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-       gtag('config', 'G-32K555MC5R');
-     </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Check your results instantly! Fast, accurate, and easy access to exam results right at your fingertips.">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" type="image/x-icon" href="images/Logo.png"> 
-    <title> Results | Checkr </title>
-</head>
-<body>
-    <header>
-        <h1>Checkr &nbsp <img src="images/Logo.png" width="20" height="20"> </h1> 
-        <div class="menu-icon" onclick="toggleNav()">&#9776;</div>
-    </header>
-    <div id="sideNav" class="side-nav">
-        <span class="close-btn" onclick="toggleNav()">&times;</span>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="faqs.html">FAQs</a>
-        <a href="contact us.html">Contact Us</a>
-        <a href="admin.html">Admin Dashboard</a>
-        <a href="privacy policy.html">Privacy Policy</a>
-        <a href="terms of service.html">Terms of Service</a>
-    </div>
+        gtag('config', 'G-32K555MC5R');
+        </script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Check your results instantly! Fast, accurate, and easy access to exam results right at your fingertips.">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" type="image/x-icon" href="images/Logo.png"> 
+        <title> Results | Checkr </title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Checkr &nbsp <img src="images/Logo.png" width="20" height="20"> </h1> 
+            <div class="menu-icon" onclick="toggleNav()">&#9776;</div>
+        </header>
+
+        <div id="sideNav" class="side-nav">
+            <span class="close-btn" onclick="toggleNav()">&times;</span>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact us.html">Contact Us</a>
+            <a href="admin.html">Admin Dashboard</a>
+            <a href="privacy policy.html">Privacy Policy</a>
+            <a href="terms of service.html">Terms of Service</a>
+        </div>
     
-    <center>
-    <section class="result-container">
-        <h2>Results for: <span id="studentName"></span></h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Class</th>
-                    <th>Roll Number</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td id="resultName"></td>
-                    <td id="resultClass"></td>
-                    <td id="resultRoll"></td>
-                </tr>
-            </tbody>
-        </table>
-        
-        <h2>Subject Results</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Subject</th>
-                    <th>Marks</th>
-                    <th>Comment</th>
-                </tr>
-            </thead>
-            <tbody id="resultsTable">
+        <center>
+        <section class="result-container">
+            <h2>Results for: Mock Set One - Ndejje Senior Secondary School <span id="studentName"></span></h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th>Roll Number</th>
+                    </tr>
+                </thead>
 
-                <!-- Dynamic Results Rows -->
-            </tbody>
-        </table>
-    </section>
+                <tbody>
+                    <tr>
+                        <td id="resultName"></td>
+                        <td id="resultClass"></td>
+                        <td id="resultRoll"></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h2>Subject Results</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Marks (Out of 100)</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody id="resultsTable">
 
-    <div class="buttons">
-        <button onclick="window.print()">Download / Print</button>
-        <button onclick="location.href='index.html'">Back to Home</button>
-    </div>
+                    <!-- Dynamic Results Rows -->
+                </tbody>
+            </table>
+        </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 Checkr. All rights reserved.</p>
-        <p><a href="privacy policy.html" style="color: white;">Privacy Policy</a> | <a href="terms of service.html" style="color: white;">Terms of Service</a></p>
-    </footer>
+        <div class="buttons">
+            <button onclick="window.print()">Download / Print</button>
+            <button onclick="location.href='contact us.html'">Talk to Us</button>
+        </div>
 
-    <!-- Chatbot 8 -->
-    <script>
-        (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="_4YgMrZd3MJu44GX_wBUE";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
-    </script>
+        <footer class="footer">
+            <p>&copy; 2025 Checkr. All rights reserved.</p>
+            <p><a href="privacy policy.html" style="color: white;">Privacy Policy</a> | <a href="terms of service.html" style="color: white;">Terms of Service</a></p>
+        </footer>
 
-    <script>
-        function toggleNav() {
-            document.getElementById("sideNav").classList.toggle("open");
-        }
-    </script>
+        <!-- Chatbot 8 -->
+        <script>
+            (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="_4YgMrZd3MJu44GX_wBUE";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+        </script>
 
-    <script src="javascript/script.js">    </script>   
-    <script src="javascript/result.js">    </script>
+        <script>
+            function toggleNav() {
+                document.getElementById("sideNav").classList.toggle("open");
+            }
+        </script>
 
+        <script src="javascript/result.js">    </script>
 
-</body>
+    </body>
 </html>
