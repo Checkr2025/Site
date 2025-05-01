@@ -24,6 +24,10 @@ function checkResult() {
         { roll: "068", name: "Nsiima Angel" },
         { roll: "063", name: "Nansubuga Robinah Kizito" },
         { roll: "028", name: "Kirabo Tiltons Egondi" },
+        { roll: "057", name: "Nambatya Angela" },
+        { roll: "045", name: "Mulungi Ntege Shan" },
+        { roll: "040", name: "Miriam Najjuma" },
+        { roll: "037", name: "Malumba Mary Spice" },
     ];
 
 

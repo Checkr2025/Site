@@ -178,7 +178,57 @@ const students = [
         {subject: "History", marks: "72.0", comment: "B"},
         {subject: "Mathematics", marks: "33.0", comment: "E"},
         {subject: "Physics", marks: "77.0", comment: "B"},
+    ]},
+
+    { roll: "057", name: "Nambatya Angela", class: "F.4 C", results: [
+        {subject: "Biology", marks: "53.0", comment: "D"},
+        {subject: "Chemistry", marks: "70.0", comment: "B"},
+        {subject: "Chinese", marks: "81.0", comment: "B"},
+        {subject: "English", marks: "82.0", comment: "B"},
+        {subject: "Entrepreneurship", marks: "70.0", comment: "B"},
+        {subject: "Geography", marks: "87.0", comment: "A"},
+        {subject: "History", marks: "50.0", comment: "D"},
+        {subject: "Mathematics", marks: "58.0", comment: "D"},
+        {subject: "Physics", marks: "79.0", comment: "B"},
+    ]},
+
+    { roll: "045", name: "Mulungi Ntege Shan", class: "F.4 C", results: [
+        {subject: "Art and Design", marks: "68.0", comment: "C"},
+        {subject: "Biology", marks: "66.0", comment: "C"},
+        {subject: "Chemistry", marks: "59.0", comment: "D"},
+        {subject: "Chinese", marks: "73.0", comment: "B"},
+        {subject: "English", marks: "80.0", comment: "B"},
+        {subject: "Geography", marks: "80.0", comment: "B"},
+        {subject: "History", marks: "50.0", comment: "D"},
+        {subject: "Mathematics", marks: "63.0", comment: "C"},
+        {subject: "Physics", marks: "53.0", comment: "D"},
+    ]},
+
+    { roll: "040", name: "Miriam Najjuma", class: "F.4 C", results: [
+        {subject: "Art and Design", marks: "78.0", comment: "B"},
+        {subject: "Biology", marks: "47.0", comment: "D"},
+        {subject: "Chemistry", marks: "58.0", comment: "D"},
+        {subject: "Christian Religious Education", marks: "86.0", comment: "A"},
+        {subject: "English", marks: "77.0", comment: "B"},
+        {subject: "Geography", marks: "75.0", comment: "B"},
+        {subject: "History", marks: "72.0", comment: "B"},
+        {subject: "Mathematics", marks: "50.0", comment: "D"},
+        {subject: "Physics", marks: "57.0", comment: "D"},
+    ]},
+
+    { roll: "037", name: "Malumba Mary Spice", class: "F.4 C", results: [
+        {subject: "Biology", marks: "49.0", comment: "D"},
+        {subject: "Chemistry", marks: "72.0", comment: "B"},
+        {subject: "English", marks: "82.0", comment: "B"},
+        {subject: "French", marks: "69.0", comment: "C"},
+        {subject: "Geography", marks: "62.0", comment: "C"},
+        {subject: "History", marks: "50.0", comment: "D"},
+        {subject: "Information, Communication and Technology", marks: "56.0", comment: "D"},
+        {subject: "Mathematics", marks: "53.0", comment: "D"},
+        {subject: "Physics", marks: "55.0", comment: "D"},
     ]}
+
+
 
     
 
